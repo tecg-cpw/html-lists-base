@@ -1,0 +1,15 @@
+/******************/
+/*** Custom CSS ***/
+/******************/
+
+body{
+	width: 700px;
+	margin: 0 auto;
+	font-family: Cambria, Georgia, serif;
+}
+dt{
+	font-weight: bold;
+}
+dd{
+	margin:0;
+}
