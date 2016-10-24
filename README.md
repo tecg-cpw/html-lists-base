@@ -14,6 +14,6 @@
 
 Complétez le fichier `index.html` avec les balises de **listes** afin d'arriver au résultat suivant :
 
-![./rendu.png](Résultat attendu)
+![Résultat attendu](./rendu.png)
 
 N'oubliez pas de lier la feuille de styles qui se trouve dans le dossier `css`.
