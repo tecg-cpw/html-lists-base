@@ -1,65 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Les listes</title>
 
-Les listes
-Les listes ordonnées
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <h1>Les listes</h1>
 
-Une liste ordonnée (ordered list en anglais) est équipée de puces numérotées automatiquement par le navigateur. Le conteneur <ol> est toujours parent de zéro ou plusieurs éléments de liste <li>.
-Mes jeux vidéos favoris
+        <h2>Les listes ordonnées</h2>
 
-Final Fantasy VII
-Batman Arkham Knight
-Grand Theft Auto 5
-Minecraft
-Metal Slug
+        <p>Une liste ordonnée (<em>ordered list</em> en anglais) est équipée de puces numérotées automatiquement par le navigateur. Le conteneur <code>&lt;ol&gt;</code> est toujours parent de zéro ou plusieurs éléments de liste <code>&lt;li&gt;</code>.</p>
 
-Les 5 dernières équipes de curling d'Houtsiplou
+        <h3>Mes jeux vidéos favoris</h3>
 
-Les petits canards
-Les gratteurs-flotteurs
-Les mangoustes chauves
-Billy et les billettes
-Les rois de la banquise
+        <ol>
+            <li>Final Fantasy VII</li>
+            <li>Batman Arkham Knight</li>
+            <li>Grand Theft Auto 5</li>
+            <li>Minecraft</li>
+            <li>Metal Slug</li>
+        </ol>
 
-Le décompte du nouvel an le plus saugrenu de tout les temps
+        <h3>Les 5 dernières équipes de curling d'Houtsiplou</h3>
 
-S'allonger par terre
-Manger une banane sans la peler
-Se raser les sourcils
-Faire un cumulet
-Affoner le premier verre à votre portée
-Bonne Année !
+        <ol reversed>
+            <li>Les petits canards</li>
+            <li>Les gratteurs-flotteurs</li>
+            <li>Les mangoustes chauves</li>
+            <li>Billy et les billettes</li>
+            <li>Les rois de la banquise</li>
+        </ol>
 
-Les listes non-ordonnées
+        <h3>Le décompte du nouvel an le plus saugrenu de tout les temps</h3>
 
-La liste non ordonnée (unordered list en anglais) <ul> partage le podium avec <ol> bien qu’elle soit plus fréquemment utilisée. Comme son nom l’indique, son contenu n’est pas spécialement trié et son ordre peut être changé sans altérer significativement son sens.
-Ma liste de course
+        <ol reversed start="0">
+            <li>S'allonger par terre</li>
+            <li>Manger une banane sans la peler</li>
+            <li>Se raser les sourcils</li>
+            <li>Faire un cumulet</li>
+            <li>Affoner le premier verre à votre portée</li>
+            <li>Bonne Année !</li>
+        </ol>
 
-Beurre
-Pain
-Edam tranché
-Carottes
-Patates douces
-Œufs
-Potimarron
-Salade
-Curcuma
-Cumin
+        <h2>Les listes non-ordonnées</h2>
 
-Les listes
+        <p>La liste non ordonnée (<em>unordered list</em> en anglais) <code>&lt;ul&gt;</code> partage le podium avec <code>&lt;ol&gt;</code> bien qu’elle soit plus fréquemment utilisée. Comme son nom l’indique, son contenu n’est pas spécialement trié et son ordre peut être changé sans altérer significativement son sens.</p>
 
-La liste de définitions <dl> (description list en anglais) répond au besoin de lister des paires de termes et de descriptions qui leur sont liées.
+        <h3>Ma liste de course</h3>
 
-On peut la comparer à un dictionnaire associant la définition <dd> au mot <dt>. Aucun tri alphabétique n’est cependant à l’œuvre, il appartient à l’auteur de la liste de l’ordonner dans le code source.
+        <ul>
+            <li>Beurre</li>
+            <li>Pain</li>
+            <li>Edam tranché</li>
+            <li>Carottes</li>
+            <li>Patates douces</li>
+            <li>Œufs</li>
+            <li>Potimarron</li>
+            <li>Salade</li>
+            <li>Curcuma</li>
+            <li>Cumin</li>
+        </ul>
 
-Ailurus fulgens
-Classification selon MSW
-Règne : Animalia 
-Embranchement : Chordata 
-Classe : Mammalia 
-Ordre : Carnivora 
-Sous-ordre : Caniformia 
-Famille : Ailuridae 
-Genre
-Ailurus 
-Nom binominal
-Ailurus fulgens 
+        <h2>Les listes de définition</h2>
 
+        <p>La liste de définitions <code>&lt;dl&gt;</code> (<em>description list</em> en anglais) répond au besoin de lister des paires de termes et de descriptions qui leur sont liées.</p>
+
+        <p>On peut la comparer à un dictionnaire associant la définition <code>&lt;dd&gt;</code> au mot <code>&lt;dt&gt;</code>. Aucun tri alphabétique n’est cependant à l’œuvre, il appartient à l’auteur de la liste de l’ordonner dans le code source.</p>
+
+        <dl>
+            <dt>Ailurus fulgens</dt>
+            <dd>
+                <img src="img/firefox-panda.jpg" alt="Ailurus fulgens (Petit Panda Roux), dormant." />
+            </dd>
+            <dt>Classification selon MSW</dt>
+            <dd>
+                Règne : <em>Animalia</em><br />
+                Embranchement : <em>Chordata</em><br />
+                Classe : <em>Mammalia</em><br />
+                Ordre : <em>Carnivora</em><br />
+                Sous-ordre : <em>Caniformia</em><br />
+                Famille : <em>Ailuridae</em>
+            </dd>
+            <dt>Genre</dt>
+            <dd>Ailurus</dd>
+            <dt>Nom binômial</dt>
+            <dd>Ailurus fulgens</dd>
+        </dl>
+    </body>
+</html>
