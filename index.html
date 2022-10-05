@@ -1,58 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Les listes
+        </title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <h1 aria-level="1" role="heading">
+            Les listes
+        </h1>
 
-Les listes
-Les listes ordonnées
+        <h2 aria-level="2" role="heading">
+            Les listes ordonnées
+        </h2>
+        <p>
+            Une liste ordonnée (<em>ordered list</em> en anglais) est équipée de puces numérotées automatiquement par le navigateur. Le conteneur <code>&lt;ol&gt;</code> est toujours parent de zéro ou plusieurs éléments de liste <code>&lt;li&gt;</code>.
+        </p>
+        <h3 aria-level="3" role="heading">
+            Mes jeux vidéos favoris
+        </h3>
+        <ol>
+            <li>Final Fantasy VII</li>
+            <li>Batman Arkham Knight</li>
+            <li>Grand Theft Auto 5</li>
+            <li>Minecraft</li>
+            <li>Metal Slug</li>
+        </ol>
+        <h3 aria-level="3" role="heading">
+            Les 5 dernières équipes de curling d'Houtsiplou
+        </h3>
+        <ol reversed>
+            <li>Les petits canards</li>
+            <li>Les gratteurs-flotteurs</li>
+            <li>Les mangoustes chauves</li>
+            <li>Billy et les billettes</li>
+            <li>Les rois de la banquise</li>
+        </ol>
+        <h3 aria-level="3" role="heading">
+            Le décompte du nouvel an le plus saugrenu de tout les temps
+        </h3>
+        <ol reversed start="0">
+            <li>S'allonger par terre</li>
+            <li>Manger une banane sans la peler</li>
+            <li>Se raser les sourcils</li>
+            <li>Faire un cumulet</li>
+            <li>Affoner le premier verre à votre portée</li>
+            <li>Bonne Année !</li>
+        </ol>
+        <h2 aria-level="2" role="heading">
+            Les listes non-ordonnées
+        </h2>
 
-Une liste ordonnée (ordered list en anglais) est équipée de puces numérotées automatiquement par le navigateur. Le conteneur <ol> est toujours parent de zéro ou plusieurs éléments de liste <li>.
-Mes jeux vidéos favoris
+        <p>La liste non ordonnée (<em>unordered list</em> en anglais) <code>&lt;ul&gt;</code> partage le podium avec <code>&lt;ol&gt;</code> bien qu’elle soit plus fréquemment utilisée. Comme son nom l’indique, son contenu n’est pas spécialement trié et son ordre peut être changé sans altérer significativement son sens.</p>
 
-Final Fantasy VII
-Batman Arkham Knight
-Grand Theft Auto 5
-Minecraft
-Metal Slug
+        <h3 aria-level="3" role="heading">
+            Ma liste de course
+        </h3>
+        <ul>
+            <li>Beurre</li>
+            <li>Pain</li>
+            <li>Edam tranché</li>
+            <li>Carottes</li>
+            <li>Patates douces</li>
+            <li>Œufs</li>
+            <li>Potimarron</li>
+            <li>Salade</li>
+            <li>Curcuma</li>
+            <li>Cumin</li>
+        </ul>
 
-Les 5 dernières équipes de curling d'Houtsiplou
+        <h2 aria-level="2" role="heading">
+            Les listes de définition
+        </h2>
 
-Les petits canards
-Les gratteurs-flotteurs
-Les mangoustes chauves
-Billy et les billettes
-Les rois de la banquise
+        <p>
+            La liste de définitions <code>&lt;dl&gt;</code> (<em>description list</em> en anglais) répond au besoin de lister des paires de termes et de descriptions qui leur sont liées.
+        </p>
 
-Le décompte du nouvel an le plus saugrenu de tout les temps
-
-S'allonger par terre
-Manger une banane sans la peler
-Se raser les sourcils
-Faire un cumulet
-Affoner le premier verre à votre portée
-Bonne Année !
-
-Les listes non-ordonnées
-
-La liste non ordonnée (unordered list en anglais) <ul> partage le podium avec <ol> bien qu’elle soit plus fréquemment utilisée. Comme son nom l’indique, son contenu n’est pas spécialement trié et son ordre peut être changé sans altérer significativement son sens.
-Ma liste de course
-
-Beurre
-Pain
-Edam tranché
-Carottes
-Patates douces
-Œufs
-Potimarron
-Salade
-Curcuma
-Cumin
-
-Les listes
-
-La liste de définitions <dl> (description list en anglais) répond au besoin de lister des paires de termes et de descriptions qui leur sont liées.
-
-On peut la comparer à un dictionnaire associant la définition <dd> au mot <dt>. Aucun tri alphabétique n’est cependant à l’œuvre, il appartient à l’auteur de la liste de l’ordonner dans le code source.
-
-Les outils pour une meilleure vie privée
-
-Firefox
-Firefox est un navigateur Web libre, open-source, multi-plateforme dévelopé par la Mozilla Corporation et des centaines de volontaires. Il est conseillé d'installer des extensions afin de renforcer, encore, la qualité du navigateur. Vous pouvez télécharger la configuration de Arkenfox, sur son github. 
-ProtonMail
-Proton Mail est une messagerie chiffrée basée en Suisse. Disponible en version gratuite et payante, ce service inclu le cryptage point à point, le cryptage zero-access, un service anti-phishing, un service anti-spam et une authentification à deux facteurs. Disponbile sur Android, iOS et en interface web. 
+        <p>
+            On peut la comparer à un dictionnaire associant la définition <code>&lt;dd&gt;</code> au mot <code>&lt;dt&gt;</code>. Aucun tri alphabétique n’est cependant à l’œuvre, il appartient à l’auteur de la liste de l’ordonner dans le code source.
+        </p>
+        <h3 aria-level="3" role="heading">
+            Les outils pour une meilleure vie privée
+        </h3>
+        <dl>
+            <dt>
+                Firefox
+            </dt>
+            <dd>
+                <img src="./img/firefox-logo-2019.svg" alt="" width="77" height="79">
+            </dd>
+            <dd>
+                Firefox est un navigateur Web libre, open-source, multi-plateforme dévelopé par la Mozilla Corporation et des centaines de volontaires. Il est conseillé d'installer des extensions afin de renforcer, encore, la qualité du navigateur. Vous pouvez télécharger la configuration de <a href="https://github.com/arkenfox/user.js/">Arkenfox, sur son github</a>.
+            </dd>
+            <dt>
+                ProtonMail
+            </dt>
+            <dd>
+                <img src="./img/proton-mail-badge.svg" alt="" width="77" height="79">
+            </dd>
+            <dd>
+                Proton Mail est une messagerie chiffrée basée en Suisse. Disponible en version gratuite et payante, ce service inclu le cryptage point à point, le cryptage zero-access, un service anti-phishing, un service anti-spam et une authentification à deux facteurs. Disponbile sur Android, iOS et en interface web.
+            </dd>
+        </dl>
+    </body>
+</html>
