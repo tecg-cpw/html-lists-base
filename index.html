@@ -5,7 +5,7 @@
         <title>
             Les listes
         </title>
-        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="./css/styles.css" />
     </head>
     <body>
         <h1 aria-level="1" role="heading">
@@ -16,12 +16,12 @@
             Les listes ordonnées
         </h2>
         <p>
-            Une liste ordonnée (<em>ordered list</em> en anglais) est équipée de puces numérotées automatiquement par le navigateur. Le conteneur <code>&lt;ol&gt;</code> est toujours parent de zéro ou plusieurs éléments de liste <code>&lt;li&gt;</code>.
+            Une liste ordonnée (<i lang="en">ordered list</i> en anglais) est équipée de puces numérotées automatiquement par le navigateur. Le conteneur <code>&lt;ol&gt;</code> est toujours parent de zéro ou plusieurs éléments de liste <code>&lt;li&gt;</code>.
         </p>
         <h3 aria-level="3" role="heading">
             Mes jeux vidéos favoris
         </h3>
-        <ol>
+        <ol lang="en">
             <li>Final Fantasy VII</li>
             <li>Batman Arkham Knight</li>
             <li>Grand Theft Auto 5</li>
@@ -41,7 +41,7 @@
         <h3 aria-level="3" role="heading">
             Le décompte du nouvel an le plus saugrenu de tout les temps
         </h3>
-        <ol reversed start="0">
+        <ol reversed start="5">
             <li>S'allonger par terre</li>
             <li>Manger une banane sans la peler</li>
             <li>Se raser les sourcils</li>
@@ -53,10 +53,10 @@
             Les listes non-ordonnées
         </h2>
 
-        <p>La liste non ordonnée (<em>unordered list</em> en anglais) <code>&lt;ul&gt;</code> partage le podium avec <code>&lt;ol&gt;</code> bien qu’elle soit plus fréquemment utilisée. Comme son nom l’indique, son contenu n’est pas spécialement trié et son ordre peut être changé sans altérer significativement son sens.</p>
+        <p>La liste non ordonnée (<i lang="en">unordered list</i> en anglais) <code>&lt;ul&gt;</code> partage le podium avec <code>&lt;ol&gt;</code> bien qu’elle soit plus fréquemment utilisée. Comme son nom l’indique, son contenu n’est pas spécialement trié et son ordre peut être changé sans altérer significativement son sens.</p>
 
         <h3 aria-level="3" role="heading">
-            Ma liste de course
+            Ma liste de courses
         </h3>
         <ul>
             <li>Beurre</li>
@@ -72,15 +72,15 @@
         </ul>
 
         <h2 aria-level="2" role="heading">
-            Les listes de définition
+            Les listes de description
         </h2>
 
         <p>
-            La liste de définitions <code>&lt;dl&gt;</code> (<em>description list</em> en anglais) répond au besoin de lister des paires de termes et de descriptions qui leur sont liées.
+            La Liste de description (dont un cas particulier est la liste de définition) <code>&lt;dl&gt;</code> (<em>description list</em> en anglais) répond au besoin de lister des paires de termes et de descriptions qui leur sont liées.
         </p>
 
         <p>
-            On peut la comparer à un dictionnaire associant la définition <code>&lt;dd&gt;</code> au mot <code>&lt;dt&gt;</code>. Aucun tri alphabétique n’est cependant à l’œuvre, il appartient à l’auteur de la liste de l’ordonner dans le code source.
+            On peut comparer la liste de définition à un dictionnaire associant la définition <code>&lt;dd&gt;</code> au mot <code>&lt;dt&gt;</code>. Aucun tri alphabétique n’est cependant à l’œuvre, il appartient à l’auteur de la liste de l’ordonner dans le code source.
         </p>
         <h3 aria-level="3" role="heading">
             Les outils pour une meilleure vie privée
@@ -104,6 +104,33 @@
             <dd>
                 Proton Mail est une messagerie chiffrée basée en Suisse. Disponible en version gratuite et payante, ce service inclu le cryptage point à point, le cryptage zero-access, un service anti-phishing, un service anti-spam et une authentification à deux facteurs. Disponbile sur Android, iOS et en interface web.
             </dd>
+        </dl>
+        <h3 aria-level="3" role="heading">
+            Les outils pour une meilleure vie privée (version 2)
+        </h3>
+        <dl>
+            <div>
+                <dt>
+                    Firefox
+                </dt>
+                <dd>
+                    <img src="./img/firefox-logo-2019.svg" alt="" width="77" height="79">
+                </dd>
+                <dd>
+                    Firefox est un navigateur Web libre, open-source, multi-plateforme dévelopé par la Mozilla Corporation et des centaines de volontaires. Il est conseillé d'installer des extensions afin de renforcer, encore, la qualité du navigateur. Vous pouvez télécharger la configuration de <a href="https://github.com/arkenfox/user.js/">Arkenfox, sur son github</a>.
+                </dd>
+            </div>
+            <div>
+                <dt>
+                    ProtonMail
+                </dt>
+                <dd>
+                    <img src="./img/proton-mail-badge.svg" alt="" width="77" height="79">
+                </dd>
+                <dd>
+                    Proton Mail est une messagerie chiffrée basée en Suisse. Disponible en version gratuite et payante, ce service inclu le cryptage point à point, le cryptage zero-access, un service anti-phishing, un service anti-spam et une authentification à deux facteurs. Disponbile sur Android, iOS et en interface web.
+                </dd>
+            </div>
         </dl>
     </body>
 </html>
